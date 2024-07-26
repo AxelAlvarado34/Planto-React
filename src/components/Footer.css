@@ -1,0 +1,412 @@
+.footer {
+    background-color: #222C1D;
+    padding: 5rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.alert{
+    background-color: crimson;
+    padding: 1rem;
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 85%;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.alert-success{
+    background-color: green;
+}
+
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    color: white;
+
+    .footer-logo {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        margin-bottom: 25px;
+
+        .footer-img {
+            width: 70px;
+            height: 70px;
+        }
+
+        .footer-title {
+            margin-top: 10px;
+            font-size: 4rem;
+            font-weight: 700;
+        }
+    }
+
+    .footer-text {
+        width: 50%;
+        font-size: 1.5rem;
+    }
+
+    .footer-social {
+        margin-top: 2rem;
+        display: flex;
+        gap: 2rem;
+
+        .footer-link {
+            color: white;
+            text-decoration: none;
+
+            .footer-icon {
+                font-size: 2rem;
+                transition: all .5s;
+
+                &:hover {
+                    transform: scale(1.5);
+                }
+            }
+        }
+
+        .gitHub{            
+            display: flex;
+            gap: 1rem;
+            align-items: end;
+
+            &:hover .icon-git{
+                transform: scale(1.5);
+            }
+            
+            .github-name{
+                font-size: 1.3rem;
+            }
+        }
+    }
+}
+
+.quick-links {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    width: 40%;
+
+    .quick-title {
+        font-size: 1.7rem;
+        font-weight: 600;
+    }
+
+    .quick-link {
+        cursor: pointer;
+        color: white;
+        text-decoration: none;
+        font-size: 1.3rem;
+        font-weight: 200;
+    }
+}
+
+.footer-contact {
+    width: 60%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    .form-title {
+        color: white;
+        font-size: 2rem;
+        font-weight: 500;
+        margin-bottom: 5rem;
+    }
+
+    .form {
+        .form-input {
+            background-color: transparent;
+            border: 2px solid white;
+            padding: 2rem;
+            border-radius: 1rem 0 0 1rem;
+            width: 300px;
+
+            font-size: 1.4rem;
+            color: white;
+
+
+            &::placeholder {
+                font-size: 1.4rem;
+            }
+        }
+
+        .form-cta {
+            height: 65px;
+            width: 100px;
+            border: none;
+            border-radius: 0 1rem 1rem 0;
+            text-transform: uppercase;
+            cursor: pointer;
+            font-size: 1.4rem;
+            transition: all .5s;
+
+
+            &:hover {
+                color: green;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 1400px) {
+
+    .footer-contact{
+        .form{
+
+            .form-title{
+                font-size: 2.8rem;
+            }
+            .form-input{
+                width: 200px;
+            }
+        }
+    }
+
+    .alert{
+        width: 300px;
+    }
+
+}
+
+@media screen and (max-width: 1300px) {
+    .footer-contact {
+        width: 80%;
+    }
+
+    .footer-info {
+        .footer-text {
+            width: 80%;
+        }
+    }
+}
+
+@media screen and (max-width: 1250px) {
+
+    .footer-contact{
+        .form{
+
+            .form-title{
+                font-size: 2.8rem;
+            }
+            .form-input{
+                width: 200px;
+            }
+        }
+    }
+
+    .alert{
+        width: 300px;
+    }
+
+}
+
+
+@media screen and (max-width: 1200px) {
+    .footer-contact {
+        width: 80%;
+
+        .form {
+            .form-input {
+                width: 250px;
+            }
+        }
+    }
+
+    .footer-info {
+        .footer-text {
+            width: 80%;
+        }
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .footer-contact {
+        width: 100%;
+
+        .form {
+            .form-input {
+                width: 200px;
+            }
+        }
+    }
+
+    .quick-links {
+        width: 60%;
+    }
+
+    .footer-info {
+        .footer-text {
+            width: 80%;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1150px) {
+    .footer-contact {
+
+        .form {
+            .form-input {
+                width: 200px;
+            }
+        }
+    }
+
+    .alert{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 930px) {
+
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .footer-contact {
+        width: 100%;
+        text-align: center;
+
+        .form {
+            .form-title {
+                font-size: 4rem;
+            }
+
+            .form-input {
+                width: 400px;
+            }
+        }
+    }
+
+    .quick-links {
+        margin: 50px 0;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+
+        .quick-title {
+            font-size: 3rem;
+        }
+
+        .quick-link {
+            font-size: 2rem;
+        }
+    }
+
+
+    .footer-info {
+        text-align: center;
+
+        .footer-logo {
+            justify-content: center;
+        }
+
+        .footer-text {
+            margin-top: 30px;
+            width: 100%;
+            font-size: 2rem;
+            opacity: 80%;
+        }
+
+        .footer-social {
+            justify-content: center;
+            margin-top: 50px;
+            
+            gap: 5rem;
+            
+            .footer-link{
+                .footer-icon{
+                    font-size: 4rem;
+                }
+            }
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .footer-contact{
+        .form{
+
+            .form-title{
+                font-size: 2.8rem;
+            }
+            .form-input{
+                width: 250px;
+            }
+        }
+    }
+
+    .alert{
+        width: 350px;
+    }
+
+}
+
+
+@media screen and (max-width: 500px) {
+
+    .footer-contact{
+        .form{
+
+            .form-title{
+                font-size: 2.8rem;
+            }
+            .form-input{
+                width: 200px;
+            }
+        }
+    }
+
+    .footer-info {
+        text-align: center;
+
+        .footer-logo {
+            justify-content: center;
+        }
+
+        .footer-text {
+            width: 100%;
+        }
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .footer-contact{
+        .form{
+
+            .form-title{
+                font-size: 2.8rem;
+            }
+            .form-input{
+                width: 150px;
+            }
+        }
+    }
+
+    .alert{
+        width: 250px;
+    }
+
+}
